@@ -5,11 +5,11 @@ def op():
 
 
 def add_worker():
-    id = int(input())
-    name = input()
-    lastname = input()
-    number = int(input())
-    comments = input()
+    id = int(input("Введите ID: "))
+    name = input("Введите имя: ")
+    lastname = input("Введите фамилию: ")
+    number = int(input("Введите номер: "))
+    comments = input("Введите комментарий: ")
     line = f"{id}, {name}, {lastname}, {number}, {comments}\n"
     with open("worker_list2.txt", "a") as file:
         file.write(line)
